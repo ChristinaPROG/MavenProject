@@ -208,6 +208,7 @@ public class CommonMethods extends PageInitializer{
                driver.switchTo().window(window);
                break;
            }
+
        }
     }
 

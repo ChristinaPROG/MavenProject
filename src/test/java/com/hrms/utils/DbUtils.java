@@ -1,5 +1,4 @@
 package com.hrms.utils;
-import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -16,8 +15,8 @@ public class DbUtils {
     public static Connection getConnection() {
 
         try {
-            conn = DriverManager.getConnection(ConfigsReader.getPropertyValue("dbUrl"),
-                    ConfigsReader.getPropertyValue("dbUsername"), ConfigsReader.getPropertyValue("dbPassword"));
+            conn = DriverManager.getConnection( ConfigurationReader.getPropertyValue("dbUrl"),
+                    ConfigurationReader.getPropertyValue("dbUsername"), ConfigurationReader.getPropertyValue("dbPassword"));
         } catch (SQLException e) {
             e.printStackTrace();
         }

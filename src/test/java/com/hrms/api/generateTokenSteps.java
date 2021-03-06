@@ -1,4 +1,4 @@
-package com.hrms.API;
+package com.hrms.api;
 
 import io.cucumber.java.en.Given;
 
